@@ -18,12 +18,14 @@ Supports Rust, TypeScript, TSX, JavaScript, C#, Python, Go and Java. Java needs 
 ## Layout
 
 - `server/`: the language server (`better-highlights-lsp`). It parses with tree-sitter and serves inlay hints and semantic tokens.
-- `src/lib.rs`, `extension.toml`: the Zed extension. It starts the server from `PATH`.
+- `src/lib.rs`, `extension.toml`: the Zed extension. It starts the server from `PATH`, or downloads it from the latest GitHub release.
+- `.github/workflows/release.yml`: builds the server for Windows, macOS and Linux when a `v*` tag is pushed.
 
 ## Install
 
-1. `cargo install --path server`
-2. In Zed, run `zed: install dev extension` and pick this folder. Restart Zed if the server was just added to `PATH`.
+In Zed, run `zed: install dev extension` and pick this folder. The extension downloads the server on first use.
+
+To work on the server, run `cargo install --path server` instead. A `better-highlights-lsp` on `PATH` takes precedence over the download. Restart Zed after adding it to `PATH`.
 
 ## Settings
 

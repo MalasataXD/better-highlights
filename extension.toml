@@ -3,7 +3,8 @@ name = "Better Highlights"
 version = "0.1.0"
 schema_version = 1
 authors = ["MalasataXD"]
-description = "Cognitive complexity hints and tagged comment highlighting."
+description = "Cognitive complexity hints and colour-coded comment tags."
+repository = "https://github.com/MalasataXD/better-highlights"
 
 [language_servers.better-highlights-lsp]
 name = "Better Highlights"
