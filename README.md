@@ -92,3 +92,7 @@ Set these under `lsp.better-highlights-lsp.initialization_options` in your Zed s
 - `complexity_limit`: functions scoring above this get a warning.
 - `hint_threshold`: functions scoring below this get no hint. Set it to `0` to show every hint.
 - `tags`: setting this replaces the default list. The longest matching prefix wins. A word prefix such as `TODO` must be followed by a non-word character, so `TODOS` doesn't match. Each `modifier` needs a matching entry in `semantic_token_rules` to get a style (`foreground_color`, `background_color`, `font_weight: "bold"`, `font_style: "italic"`, `underline`, `strikethrough`), for example `{ "token_type": "comment", "token_modifiers": ["hack"], "foreground_color": "#C678DD" }`.
+
+## Credits
+
+The idea comes from [Better Highlights](https://plugins.jetbrains.com/plugin/12895-better-highlights) for JetBrains IDEs, by [Igor Zarvanskyi](https://clutcher.github.io/). This is an independent reimplementation for Zed, not affiliated with that plugin.
