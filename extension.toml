@@ -1,0 +1,10 @@
+id = "better-highlights"
+name = "Better Highlights"
+version = "0.1.0"
+schema_version = 1
+authors = ["MalasataXD"]
+description = "Cognitive complexity hints and tagged comment highlighting."
+
+[language_servers.better-highlights-lsp]
+name = "Better Highlights"
+languages = ["Rust", "TypeScript", "TSX", "JavaScript", "CSharp", "Python", "Go", "Java"]
