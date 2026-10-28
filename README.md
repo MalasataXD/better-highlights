@@ -23,7 +23,11 @@ Supports Rust, TypeScript, TSX, JavaScript, C#, Python, Go and Java. Java needs 
 
 ## Install
 
-In Zed, run `zed: install dev extension` and pick this folder. The extension downloads the server on first use.
+Better Highlights isn't in Zed's extension registry yet. To install it from GitHub:
+
+1. `git clone https://github.com/MalasataXD/better-highlights`
+2. In Zed, run `zed: install dev extension` and pick the cloned folder. Zed builds the extension, which needs Rust installed via [rustup](https://rustup.rs). The extension downloads the server on first use.
+3. Add the settings below.
 
 To work on the server, run `cargo install --path server` instead. A `better-highlights-lsp` on `PATH` takes precedence over the download. Restart Zed after adding it to `PATH`.
 
